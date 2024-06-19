@@ -38,6 +38,14 @@ export const Navbar = () => {
                 Search Books
               </NavLink>
             </li>
+            {/* if user has sign in then only shelf tab will be seen */}
+            {authState.isAuthenticated && (
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/shelf">
+                  Shelf
+                </NavLink>
+              </li>
+            )}
           </ul>
           <ul className="navbar-nav ms-auto">
             {!authState.isAuthenticated ? (

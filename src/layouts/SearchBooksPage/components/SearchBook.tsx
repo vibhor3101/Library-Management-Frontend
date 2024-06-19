@@ -34,7 +34,7 @@ export const SearchBook: React.FC<{ book: BookModel }> = (props) => {
         <div className="col-md-6">
           <div className="card-body">
             <h5 className="card-title">{props.book.author}</h5>
-            <h4>{props.book.author}</h4>
+            <h4>{props.book.title}</h4>
             <p className="card-text">{props.book.description}</p>
           </div>
         </div>
